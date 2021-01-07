@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'nissan_branditalic';
+	src: url(../../assets/fonts/nissan_brand_italic-webfont.woff2) format('woff2'),
+	url(../../assets/fonts/nissan_brand_italic-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

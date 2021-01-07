@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'Nissan Brand';
+	src: url(../../assets/fonts/NissanBrand-Bold.woff2) format('woff2'),
+	url(../../assets/fonts/NissanBrand-Bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nissan Brand';
+	src: url(../../assets/fonts/NissanBrand-Italic.woff2) format('woff2'),
+	url(../../assets/fonts/NissanBrand-Italic.woff) format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Nissan Brand';
+	src: url(../../assets/fonts/NissanBrand-Italic.woff2) format('woff2'),
+	url(../../assets/fonts/NissanBrand-Italic.woff) format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Nissan Brand';
+	src: url(../../assets/fonts/NissanBrand-Bold.woff2) format('woff2'),
+	url(../../assets/fonts/NissanBrand-Bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nissan Brand';
+	src: url(../../assets/fonts/NissanBrand-Regular.woff2) format('woff2'),
+	url(../../assets/fonts/NissanBrand-Regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nissan Brand';
+	src: url(../../assets/fonts/NissanBrand-Light.woff2) format('woff2'),
+	url(../../assets/fonts/NissanBrand-Light.woff) format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nissan Brand';
+	src: url(../../assets/fonts/NissanBrand-Regular.woff2) format('woff2'),
+	url(../../assets/fonts/NissanBrand-Regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
