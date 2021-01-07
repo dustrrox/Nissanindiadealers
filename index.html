@@ -7,7 +7,7 @@
    
     <title> New Nissan Kicks</title>
     <link rel="icon" href="assets/img/favicon.ico">
-    <link  rel="icon" type="img" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" href="assets/img/favicon-32x32.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="assets/css/Nissan%20Brand.css">
@@ -45,6 +45,10 @@
                 <source class="img-fluid" media="(min-width:150px)" srcset="assets/img/kicks-mob.jpg" style="margin-left: 100px;margin-top: -100px;">
                 <img class="img-fluid" src="kicks-mob.jpg" alt="Kicks" style="widows: 2px;;">
               </picture>
+        </div><div class="btn-group" role="group" aria-label="">
+            <button type="button" class="btn btn-primary"></button>
+            <button type="button" class="btn btn-primary"></button>
+            <button type="button" class="btn btn-primary"></button>
         </div>
        </header>
     <div class="container-fluid" id="overview">
@@ -297,7 +301,7 @@
     </div>-
     <div class="container-fluid"><video controls="" width="100%" loop autoplay>
         <source src="assets/Video/KIck_AV_OPT1_v14low_1080p.mp4" type="video/mp4">
-            <source src="assets/Video/KIck_AV_OPT1_v14low_1080p.ogg" type="video/ogg">
+            <source src="/assets/Video/KIck_AV_OPT1_v14low_1080p.ogg" type="video/ogg">
     </video>
         <hr style="background-color: #3e3d3d;height: 1px;margin-top: 29px;">
     </div>
@@ -318,7 +322,13 @@
                 
         </div>
     </footer>
-  
+    <script >
+        $(".right-corder-container-button").hover(function() {
+    $(".long-text").addClass("show-long-text");   
+}, function () {
+    $(".long-text").removeClass("show-long-text");
+});
+    </script>
     <script>
       function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -327,6 +337,93 @@
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+    </script>
+
+     <script>
+    var stateObject = {
+"Chhattisgarh": { "RAIPUR": ["Shiva Nishan"]
+},
+"GUJARAT": {
+"AHMEDABAD": ["Patel Nissan"],
+"BARUCH": ["Sharddha Batsun"],
+"MEHSANA": ["Sai Aarav Nissan"],
+"SURAT": ["Pramukh Nissan"],
+"SILVASA": ["Pramukh Nissan"],
+"VAPI": ["Pramukh Nissan"],
+"VADODARA": ["Acuit Nissan"],
+"YAVATMAL": ["Pobaru Datsun"]
+}, "GOA": {
+"GOA": ["AM Nissan"]
+
+}, "MADHYA PRADESH": {
+"CHHINDWARA": [ "Shree Krishna"],
+"INDORE": ["Anand Nissan"],
+"JABALPUR": [ "Platinum Nissan"],
+"GWALIOR": ["Sumedha Nissan"],
+"RATLAM": [ "Galaxy Nissan"]
+},
+"MAHARASHTRA": {
+"AURANGABAD": [ "Aztral Automotive"],
+"AHEMADNAGAR": [ "Sakeshwar Datsun"],
+"NAGPUR": [ "Provecial Nissan"],
+"NAVIMUMBAI": ["Etco Nissan"],
+"PANWEL": ["Etco Nissan"],
+"LATUR": ["Garje Datsun"]
+},
+}
+window.onload = function () {
+var StateSel = document.getElementById("StateSel"),
+CitySel = document.getElementById("CitySel"),
+DealerSel = document.getElementById("DealerSel");
+for (var State in stateObject) {
+StateSel.options[StateSel.options.length] = new Option(State, State);
+}
+StateSel.onchange = function () {
+CitySel.length = 1; // remove all options bar first
+DealerSel.length = 1; // remove all options bar first
+if (this.selectedIndex < 1) return; // done
+for (var City in stateObject[this.value]) {
+CitySel.options[CitySel.options.length] = new Option(City, City);
+}
+}
+StateSel.onchange(); // reset in case page is reloaded
+CitySel.onchange = function () {
+DealerSel.length = 1; // remove all options bar first
+if (this.selectedIndex < 1) return; // done
+var Dealer = stateObject[StateSel.value][this.value];
+for (var i = 0; i < Dealer.length; i++) {
+DealerSel.options[DealerSel.options.length] = new Option(Dealer[i], Dealer[i]);
+}
+}
+}
+    </script>
+     </script>
+   
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
     </script>
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/jquery.min.js"></script>
