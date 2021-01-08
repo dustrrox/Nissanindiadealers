@@ -92,7 +92,7 @@ body {font-family: 'nissan_brandregular';}
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: #dddada;
 }
 
 /* When the inputs get focus, do something */
@@ -106,7 +106,7 @@ body {font-family: 'nissan_brandregular';}
   padding-left: 14px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: #dcdada;
 }
 .form-container select:focus{
     background-color: #ddd;
